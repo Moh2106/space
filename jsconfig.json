@@ -4,6 +4,8 @@
     "module": "esnext",
     "baseUrl": "./",
     "moduleResolution": "node",
+    //"experimentalDisableTemplateSupport": "true",
+    "jsx": "preserve",
     "paths": {
       "@/*": [
         "src/*"
