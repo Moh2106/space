@@ -10,6 +10,7 @@
         </div>
         
         <div>
+            <destination-bar />
             <h1>EUROPA</h1>
             <p>Don't forget to pack your hiking boots. You'll need them <br> 
             to tackle Olympus Mons, the tallest planetary mountain in <br>
@@ -22,8 +23,9 @@
 
 <script>
 import DestinationMoon from '@/components/DestinationMoon.vue'
+import DestinationBar from '@/components/DestinationBar.vue'
 export default {
-  components: { DestinationMoon },
+  components: { DestinationMoon, DestinationBar },
 
 }
 </script>

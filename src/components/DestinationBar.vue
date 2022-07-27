@@ -15,9 +15,7 @@ export default {
 
 <style lang="scss">
     .destination{ 
-        //float: right;
-        transform: translate(0em, 5em);
-        margin: 2em;
+        border: 2px solid white;
 
         &__a{ 
             color: #fff;

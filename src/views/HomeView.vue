@@ -13,7 +13,7 @@
       </div>
 
       <div>
-
+        <img src="../assets/Home/explore.png" alt="">
       </div>
     </div>
   </div>
@@ -36,9 +36,11 @@ export default {
   .home{ 
     background: url('../assets/Home/background-home-desktop.jpg');
     //transform: translateY(-0.5em);
-    height: 97vh;
+    height: 100vh;
 
-    &__description{ 
+    &__description{
+      display: flex;
+      justify-content: space-around;
       color: #fff;
     }
   }
