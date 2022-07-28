@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <nav-bar/>
+    <div class="home__nav">
+      <nav-bar/>
+    </div>
 
     <div class="home__description">
       <div>
@@ -32,11 +34,14 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .home{ 
     background: url('../assets/Home/background-home-desktop.jpg');
-    //transform: translateY(-0.5em);
     height: 100vh;
+
+    &__nav{ 
+      height: 10vh;
+    }
 
     &__description{
       display: flex;

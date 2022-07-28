@@ -57,7 +57,7 @@ export default {
         &__width{ 
             width: 80%;
             margin: 0 auto;
-            border: 2px solid #fff;
+            //border: 2px solid #fff;
         }
 
         &__flex{ 
@@ -66,7 +66,6 @@ export default {
         }
 
         &__text{
-            //margin: 1em;
 
             &--footer{ 
                 display: flex;

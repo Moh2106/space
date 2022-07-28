@@ -4,6 +4,9 @@ import MoonView from '../views/MoonView'
 import MarsView from '../views/MarsView'
 import EuropaView  from '../views/EuropaView'
 import TitanView from '../views/TitanView'
+import TechnologyLaunch from '../views/TechnologyLaunch'
+import TechnologySpace from '../views/TechnologySpace'
+import TechnologyCapsule from '../views/TechnologyCapsule'
 
 const routes = [
   {
@@ -43,6 +46,24 @@ const routes = [
     path: '/destination/titan',
     name: 'titan',
     component: TitanView
+  },
+
+  {
+    path: '/technology/launch',
+    name: 'launch',
+    component: TechnologyLaunch
+  },
+
+  {
+    path: '/technology/spaceport',
+    name: 'spaceport',
+    component: TechnologySpace
+  },
+
+  {
+    path: '/technology/capsule',
+    name: 'capsule',
+    component: TechnologyCapsule
   },
 ]
 
