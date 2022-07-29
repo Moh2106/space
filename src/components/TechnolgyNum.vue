@@ -1,22 +1,28 @@
 <template>
   <div>
     <nav>
-        <router-link to="/technology/launch" class="a" :class="{active}" >1</router-link>
-        <router-link to="/technology/spaceport" class="a">2</router-link>
-        <router-link to="/technology/capsule" class="a">3</router-link>
+        <router-link to="/technology/launch" class="a " @click="act.active === 'launch'" :class="{active:act.active === 'launch'}">1</router-link>
+        <router-link to="/technology/spaceport" class="a" @click="act.acti === 'space' " :class="{active:act.acti === 'space'}">2</router-link>
+        <router-link to="/technology/capsule" class="a" @click="(act.launch == false) && (act.space == false) && (act.capsule == true)" :active-class="{active: act.capsule}">3</router-link>
     </nav>
   </div>
 </template>
 
 <script>
+import { ref } from '@vue/reactivity'
 export default {
     setup(){ 
-        const active = () => { 
-            
-        }
+        const act = ref({
+            //active : 'launch',
+            //acti : 'space',
+            launch: true,
+            space: false,
+            capsule: true,
+        })
 
-        return{ 
-            active,
+
+        return{
+            act,
         }
             
         }

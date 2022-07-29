@@ -7,6 +7,10 @@ import TitanView from '../views/TitanView'
 import TechnologyLaunch from '../views/TechnologyLaunch'
 import TechnologySpace from '../views/TechnologySpace'
 import TechnologyCapsule from '../views/TechnologyCapsule'
+import CrewDouglas from '../views/CrewDouglas'
+import CrewMark from '../views/CrewMark'
+import CrewVictor from '../views/CrewVictor'
+import CrewAnsari from '../views/CrewAnsari'
 
 const routes = [
   {
@@ -64,6 +68,30 @@ const routes = [
     path: '/technology/capsule',
     name: 'capsule',
     component: TechnologyCapsule
+  },
+
+  {
+    path: '/crew/douglas',
+    name: 'douglas',
+    component: CrewDouglas
+  },
+
+  {
+    path: '/crew/mark',
+    name: 'mark',
+    component: CrewMark
+  },
+
+  {
+    path: '/crew/victor',
+    name: 'victor',
+    component: CrewVictor
+  },
+
+  {
+    path: '/crew/ansari',
+    name: 'ansari',
+    component: CrewAnsari
   },
 ]
 
