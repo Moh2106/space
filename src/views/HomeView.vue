@@ -1,7 +1,8 @@
 <template>
   <div class="home">
+
     <div class="home__nav">
-      <nav-bar/>
+        <nav-bar/>
     </div>
 
     <div class="home__description">
@@ -17,7 +18,11 @@
       <div>
         <img src="../assets/Home/explore.png" alt="">
       </div>
+
     </div>
+
+
+
   </div>
 </template>
 
@@ -39,14 +44,48 @@ export default {
     background: url('../assets/Home/background-home-desktop.jpg');
     height: 100vh;
 
+    @media screen and (max-width: 780px) {
+      background: url('../assets/Home/background-home-tablet.jpg');
+      margin: 0 auto;
+    }
+
+
     &__nav{ 
-      height: 10vh;
+      height: 0vh;
     }
 
     &__description{
       display: flex;
       justify-content: space-around;
       color: #fff;
+      height: 50%;
+      width: 80%;
+      margin: 0 auto;
+      transform: translateY(10em);
+
+      @media screen and (max-width: 780px) {
+        display: block;
+        height: 70%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      div{ 
+        margin: 0 auto;
+        align-content: center;
+
+        h1{ 
+          font-size: 3em;
+        }
+
+        img{ 
+          transform: translateY(7em);
+        }
+
+      }
+
     }
+
+    
   }
 </style>

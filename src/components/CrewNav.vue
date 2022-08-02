@@ -1,6 +1,7 @@
 <template>
   <div>
     <nav-bar/>
+    
     <h2>02 MEET YOUR CREW</h2>
   </div>
 </template>
@@ -14,6 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
     h2{ 
         text-align: left;
         margin: 2em 0 2em 7em;

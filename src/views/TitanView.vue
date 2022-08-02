@@ -57,6 +57,7 @@ export default {
         &__width{ 
             width: 80%;
             margin: 0 auto;
+            transform: translateY(5em);
             //border: 2px solid #fff;
         }
 

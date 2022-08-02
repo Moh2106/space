@@ -57,7 +57,8 @@ export default {
         &__width{ 
             width: 80%;
             margin: 0 auto;
-            //border: 2px solid #fff;
+            border: 2px solid #fff;
+            transform: translateY(5em);
         }
 
         &__flex{ 

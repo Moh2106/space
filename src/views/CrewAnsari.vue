@@ -49,7 +49,10 @@ export default {
             justify-content: space-around;
 
             &--defile{
-                margin-top: 10em;
+                position: fixed;
+                bottom: 10%;
+                left: 15%;
+                //margin-top: 10em;
             }
         }
     }

@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="crew__flex--image">
             <img src="../assets/Crew/image-victor-glover.webp" alt="">
         </div>
 
@@ -49,8 +49,12 @@ export default {
             justify-content: space-around;
 
             &--defile{
-                margin-top: 10em;
+                position: fixed;
+                bottom: 10%;
+                left: 15%;
+                //margin-top: 10em;
             }
+
         }
     }
 </style>

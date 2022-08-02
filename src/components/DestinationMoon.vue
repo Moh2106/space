@@ -15,8 +15,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+  h1{ 
+    margin-left: 7em;
+  }
 
 
 </style>
