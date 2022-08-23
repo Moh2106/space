@@ -1,8 +1,10 @@
 <template>
   <div class="home">
-    <div>
+    <div class="home__image">
       <img src="../assets/Home/logo.svg" alt="">
     </div>
+
+    
 
     <nav class="home__nav">
       <router-link to="/" class="a"><b>00 </b> HOME</router-link>
@@ -24,10 +26,6 @@ export default {
       tecnology: null,
     }
 
-    /*const kiri = () => { 
-      hoz.home === true,
-    }*/
-
 
     return{ 
       hoz,
@@ -45,38 +43,38 @@ export default {
 
     &__nav{
     display: flex;
-    //background: red;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
-    //border: 1px solid #fff;
-    height: 10%;
+    height: 8%;
     padding: 0 2em;
     margin: 0 1em;
     box-shadow: -1px 0px 4px 1px rgba(255, 255, 255, 0.59);
--webkit-box-shadow: -1px 0px 4px 1px rgba(255,255,255,0.59);
--moz-box-shadow: -1px 0px 4px 1px rgba(255,255,255,0.59);
+    -webkit-box-shadow: -1px 0px 4px 1px rgba(255,255,255,0.59);
+    -moz-box-shadow: -1px 0px 4px 1px rgba(255,255,255,0.59);
 
-    .a{ 
+    @media screen and (max-width : 780px) {
+      height: 4%;
+      padding: 0 1em;
+      margin: 0 1em;
+    }
+
+    a{ 
       padding: 1em;
       text-decoration: none;
       color: #fff;
       font-family: 'Barlow Condensed', sans-serif;
 
-      /*&:focus{ 
-        border-bottom: 1px solid #fff;
-        background: #cfd;
-      }*/
+      &.router-link-exact-active{ 
+      border-bottom: 3px solid #fff;
+    }
 
-      &:active{ 
-        border-bottom: 1px solid #fff;
-        background: #cfd;
+      &:hover{ 
+        transition: 0.5s ease-in-out;
       }
+
     }
   }
 
-  .b{
-    border-bottom: 1px solid #fff;
-  }
   }
   
 </style>

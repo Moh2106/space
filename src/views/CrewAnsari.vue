@@ -9,20 +9,19 @@
             <h2>FLIGHT ENGINEER</h2>
             <h1>ANOUSHEH ANSARI</h1>
             <p>Anousheh Ansari is an Iranian American engineer and co-
-                <br>
+                <span></span> <br>
             founder of Prodea Systems. Ansari was the fourth self-
-                <br>
+                <span></span> <br>
             funded space tourist, the first self-funded woman to fly
-            <br>
+                <span></span> <br>
             to the ISS, and the first Iranian in space.</p>
 
             <div class="crew__flex--defile">
                 <crew-defile/>
             </div>
-
         </div>
 
-        <div>
+        <div class="crew__flex--image">
             <img src="../assets/Crew/image-anousheh-ansari.webp" alt="">
         </div>
     </div>
@@ -42,17 +41,42 @@ export default {
 <style lang="scss" scoped>
     .crew{ 
         background: url('../assets/Crew/background-crew-desktop.jpg');
-        //height: 100vh;
 
         &__flex{ 
             display: flex;
             justify-content: space-around;
+            text-align: justify;
+
+            @media screen and (max-width : 768px) {
+                background: url('../assets/Crew/background-crew-tablet.jpg');
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
 
             &--defile{
                 position: fixed;
                 bottom: 10%;
                 left: 15%;
-                //margin-top: 10em;
+
+                @media screen and (max-width : 768px){
+                    position: relative;
+                    top: 45%;
+                    left: 30%;
+                }
+            }
+
+            h2, h1{ 
+                font-family: 'Bellefair', serif;
+                color: #fff;
+            }
+
+            &--image{ 
+                @media screen and (max-width : 768px) { 
+                    margin-top: 2em;
+                }
             }
         }
     }

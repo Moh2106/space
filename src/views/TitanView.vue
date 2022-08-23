@@ -54,16 +54,25 @@ export default {
         color: #fff;
         height: 100vh;
 
+        @media screen and (max-width : 768px) {
+              background: url('../assets/Destination/background-destination-tablet.jpg'); 
+              text-align: center;
+              width: 768px;
+        }
+
         &__width{ 
             width: 80%;
             margin: 0 auto;
             transform: translateY(5em);
-            //border: 2px solid #fff;
         }
 
         &__flex{ 
             display: flex;
             justify-content: space-around;
+
+            @media screen and (max-width : 768px) {
+                display: block;
+            }
         }
 
         &__text{

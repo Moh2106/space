@@ -75,7 +75,17 @@ export default {
         align-content: center;
 
         h1{ 
-          font-size: 3em;
+          font-size: 4em;
+          font-weight: 500;
+        }
+
+        h2{ 
+          font-weight: 100;
+        }
+
+        h1,h2{ 
+          font-family: 'Bellefair', serif;
+          color: #fff;
         }
 
         img{ 

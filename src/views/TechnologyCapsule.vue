@@ -51,7 +51,7 @@ export default {
 
         &__arrange{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
 
             &--num{ 
                 display: flex;

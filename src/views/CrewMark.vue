@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="crew__flex--image">
             <img src="../assets/Crew/image-mark-shuttleworth.webp" alt="">
         </div>
     </div>
@@ -38,17 +38,42 @@ export default {
 <style lang="scss" scoped>
     .crew{ 
         background: url('../assets/Crew/background-crew-desktop.jpg');
-        //height: 100vh;
 
         &__flex{ 
             display: flex;
             justify-content: space-around;
+            //transform: translateX(-2em);
+
+            @media screen and (max-width : 768px) {
+                background: url('../assets/Crew/background-crew-tablet.jpg');
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
 
             &--defile{
                 position: fixed;
                 bottom: 10%;
                 left: 15%;
-                //margin-top: 10em;
+                
+                @media screen and (max-width : 768px){
+                    position: relative;
+                    top: 45%;
+                    left: 30%;
+                }
+            }
+
+            h2, h1{ 
+                font-family: 'Bellefair', serif;
+                color: #fff;
+            }
+
+            &--image{ 
+                @media screen and (max-width : 768px) { 
+                    margin-top: 2em;
+                }
             }
         }
     }

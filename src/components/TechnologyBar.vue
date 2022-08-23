@@ -13,6 +13,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  div{ 
+    h1{ 
+      transform: translateX(4em);
+      margin-bottom: 2em;
+    }
+  }
 </style>

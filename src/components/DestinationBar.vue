@@ -15,12 +15,15 @@ export default {
 
 <style lang="scss">
     .destination{ 
-        border: 2px solid white;
 
-        &__a{ 
+        a{ 
             color: #fff;
             text-decoration: none;
-            padding: 1em;
+            padding: 0.5em;
+
+          &.router-link-exact-active{ 
+            border-bottom: 3px solid #fff;
+          }
         }
 
     }

@@ -2,7 +2,7 @@
   <div>
     <nav-bar/>
 
-    <h1>01 PICK YOUR DESTINATION</h1>
+    <h1> <span>01</span> PICK YOUR DESTINATION</h1>
 
   </div>
 </template>
@@ -18,6 +18,15 @@ export default {
 <style lang="scss" scoped>
   h1{ 
     margin-left: 7em;
+
+    @media screen and (max-width : 768px) {
+      text-align: center;
+      margin: 0;
+    }
+
+    span{ 
+      font-weight: 100;
+    }
   }
 
 
