@@ -21,12 +21,20 @@ export default {
     nav{ 
         display: flex;
         flex-direction: column;
+        margin-right: 4em;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0;
+        }
 
         a{ 
             text-decoration: none;
             color: #fff;
-            width: 3em;
-            height: 3em;
+            width: 2em;
+            height: 2em;
             margin: 0 auto;
             padding: 1em;
             margin: 1em;
@@ -36,6 +44,11 @@ export default {
             justify-content: center;
             align-items: center;
             font-weight: 800;
+
+            @media screen and (max-width: 768px) {
+                width: 2em;
+                height: 2em;
+            }
 
             &.router-link-exact-active{ 
                 background: #fff;

@@ -18,6 +18,7 @@ export default {
     h1{ 
       transform: translateX(4em);
       margin-bottom: 2em;
+      width: 50%;
     }
   }
 </style>

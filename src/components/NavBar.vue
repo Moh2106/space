@@ -19,17 +19,7 @@
 <script>
 export default {
   setup(){ 
-    const hoz = { 
-      home: true,
-      destination: null,
-      crew: null,
-      tecnology: null,
-    }
-
-
-    return{ 
-      hoz,
-    }
+   
   }
 }
 </script>
