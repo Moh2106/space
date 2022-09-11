@@ -50,7 +50,7 @@ export default {
       margin: 0 auto;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       background: url('../assets/Home/background-home-mobile.jpg');
       margin: 0 auto;
     }
