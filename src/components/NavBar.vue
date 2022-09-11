@@ -134,7 +134,7 @@ export default {
       display: none;
     }
 
-    @media screen and (max-width : 380px) {
+    @media screen and (max-width : 400px) {
       display: block;
     }
   }
