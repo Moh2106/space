@@ -60,6 +60,10 @@ export default {
               width: 768px;
         }
 
+        @media screen and (max-width : 380px) {
+                background: url('../assets/Destination/background-destination-mobile.jpg');
+        }
+
         &__width{ 
             width: 80%;
             margin: 0 auto;

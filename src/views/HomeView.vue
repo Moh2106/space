@@ -42,10 +42,16 @@ export default {
 <style lang="scss" scoped>
   .home{ 
     background: url('../assets/Home/background-home-desktop.jpg');
+    width: 100%;
     height: 100vh;
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
       background: url('../assets/Home/background-home-tablet.jpg');
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      background: url('../assets/Home/background-home-mobile.jpg');
       margin: 0 auto;
     }
 
@@ -63,7 +69,7 @@ export default {
       margin: 0 auto;
       transform: translateY(10em);
 
-      @media screen and (max-width: 780px) {
+      @media screen and (max-width: 760px) {
         display: block;
         height: 70%;
         margin: 0 auto;

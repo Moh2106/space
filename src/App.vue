@@ -15,6 +15,8 @@
   padding: 0;
   color: #fff;
   font-family: 'Barlow', sans-serif;
+  position: relative;
+  width: 100vw;
   //scroll-behavior: smooth;
   /*height: 100vh;
   width: 100vw;
